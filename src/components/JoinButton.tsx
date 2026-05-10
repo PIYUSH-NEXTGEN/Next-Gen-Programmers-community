@@ -1,11 +1,26 @@
-export function JoinButton({ size = "md" }: { size?: "md" | "lg" }) {
+import { DISCORD_URL } from "@/lib/links";
+
+export function JoinButton({
+  size = "md",
+  variant = "primary",
+  label,
+  href,
+}: {
+  size?: "md" | "lg";
+  variant?: "primary" | "ghost";
+  label?: string;
+  href?: string;
+}) {
+  const cls = variant === "ghost" ? "btn-ghost" : "btn-brutal";
   return (
     <a
-      href="#"
-      className="btn-brutal"
-      style={size === "lg" ? { padding: "1.4rem 2.6rem", fontSize: "1rem" } : undefined}
+      href={href ?? DISCORD_URL}
+      target="_blank"
+      rel="noreferrer"
+      className={cls}
+      style={size === "lg" ? { padding: "1.2rem 2.2rem", fontSize: "0.95rem" } : undefined}
     >
-      JOIN THE SERVER →
+      {label ?? "JOIN DISCORD"} →
     </a>
   );
 }

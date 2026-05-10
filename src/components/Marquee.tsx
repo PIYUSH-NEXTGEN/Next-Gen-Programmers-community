@@ -1,22 +1,22 @@
 const ITEMS = [
   "800+ MEMBERS",
+  "10+ CATEGORIES",
   "ACTIVE DAILY",
-  "CODE. BUILD. SHIP.",
-  "OPEN TO ALL LEVELS",
-  "NEXT-GEN PROGRAMMERS",
+  "ALL SKILL LEVELS",
+  "CODE · BUILD · SHIP",
 ];
 
 export function Marquee() {
   const loop = [...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS];
   return (
-    <div className="marquee-wrapper border-y border-white/15 py-5 overflow-hidden bg-black">
+    <div className="marquee-wrapper border-y border-border py-4 overflow-hidden bg-background">
       <div className="marquee-track">
         {loop.map((it, i) => (
           <span
             key={i}
-            className="font-mono text-sm md:text-base tracking-[0.25em] px-8 whitespace-nowrap text-white/90"
+            className="font-mono text-xs md:text-sm tracking-[0.28em] px-6 whitespace-nowrap text-foreground/80"
           >
-            {it} <span className="text-white/30 mx-2">·</span>
+            {it} <span className="text-muted-foreground mx-2">·</span>
           </span>
         ))}
       </div>
