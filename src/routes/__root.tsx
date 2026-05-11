@@ -7,6 +7,9 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 import appCss from "../styles.css?url";
 
@@ -113,7 +116,15 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <ThemeProvider>
+        <div className="min-h-screen flex flex-col bg-background text-foreground">
+          <Navbar />
+          <div className="flex-1">
+            <Outlet />
+          </div>
+          <Footer />
+        </div>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }
