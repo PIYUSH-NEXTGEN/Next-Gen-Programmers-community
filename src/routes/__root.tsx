@@ -75,14 +75,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "NEXT-GEN PROGRAMMERS" },
+      { name: "description", content: "A premium, editorial-style landing page for a Discord programming community." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "NEXT-GEN PROGRAMMERS" },
+      { property: "og:description", content: "A premium, editorial-style landing page for a Discord programming community." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "NEXT-GEN PROGRAMMERS" },
+      { name: "twitter:description", content: "A premium, editorial-style landing page for a Discord programming community." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5OdkHZKhQcXs5QbfMObP7W7GL063/social-images/social-1778524238194-Screenshot_2026-05-12_000020.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5OdkHZKhQcXs5QbfMObP7W7GL063/social-images/social-1778524238194-Screenshot_2026-05-12_000020.webp" },
     ],
     links: [
       {
