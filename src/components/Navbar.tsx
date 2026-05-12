@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useTheme } from "./ThemeProvider";
+import { LogoMark } from "./LogoMark";
 import { DISCORD_URL } from "@/lib/links";
 
 const LINKS = [
@@ -25,10 +26,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
       <div className="max-w-7xl mx-auto h-[60px] px-5 md:px-8 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="w-6 h-6 border border-foreground inline-block" />
-          <span className="font-display text-sm tracking-[0.22em] font-bold">NEXT-GEN</span>
-        </Link>
+        <LogoMark />
 
         <nav className="hidden lg:flex items-center gap-7">
           {LINKS.map((l) => (
