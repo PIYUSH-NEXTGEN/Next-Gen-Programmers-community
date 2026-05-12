@@ -42,10 +42,10 @@ function Index() {
             </div>
             <HeroTitle />
             <p
-              className="fade-up font-mono text-base md:text-lg text-muted-foreground mt-7 max-w-xl leading-relaxed"
+              className="fade-up font-cursive text-2xl md:text-3xl text-foreground/90 mt-7 max-w-xl leading-snug"
               style={{ animationDelay: `${HERO_TITLE_DURATION}ms` }}
             >
-              Where builders write code, ship products, and level up together.
+              Coding with a sip of coffee — a community made by programmers, for programmers.
             </p>
 
             <div
@@ -54,11 +54,11 @@ function Index() {
             >
               <span>800+ MEMBERS</span>
               <span className="text-muted-foreground">·</span>
-              <span>10+ CATEGORIES</span>
+              <span>7 CATEGORIES</span>
+              <span className="text-muted-foreground">·</span>
+              <span>35+ CHANNELS</span>
               <span className="text-muted-foreground">·</span>
               <span>ACTIVE DAILY</span>
-              <span className="text-muted-foreground">·</span>
-              <span>ALL LEVELS</span>
             </div>
 
             <div
