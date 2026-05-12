@@ -11,6 +11,7 @@ export function Footer() {
         <div className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-[10px] tracking-[0.22em] uppercase text-muted-foreground">
           <a href={DISCORD_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Discord</a>
           <a href={REDDIT_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Reddit</a>
+          <span>EST 4 JULY 2025</span>
           <span>© 2026</span>
         </div>
       </div>
