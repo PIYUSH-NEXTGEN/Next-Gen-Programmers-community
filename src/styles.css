@@ -34,6 +34,7 @@
   --font-display: "Space Grotesk", "Montserrat", sans-serif;
   --font-mono: "JetBrains Mono", "Space Mono", monospace;
   --font-ui: "Inter", system-ui, sans-serif;
+  --font-cursive: "Caveat", "Brush Script MT", cursive;
 }
 
 /* LIGHT MODE (default) */
