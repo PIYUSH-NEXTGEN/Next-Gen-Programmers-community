@@ -35,13 +35,16 @@ export function Channels() {
             className="brutal-card p-6 group"
           >
             <div className="flex items-center justify-between border-b border-border pb-4 mb-4">
-              <div className="flex items-center gap-2.5">
-                <Icon size={15} className="text-foreground/80 group-hover:text-foreground transition-colors" />
-                <span className="font-display font-bold text-[13px] tracking-[0.18em]">
+              <div className="flex items-center gap-2.5 min-w-0">
+                <span className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground border border-border px-1.5 py-0.5">
+                  {String(ci + 1).padStart(2, "0")}
+                </span>
+                <Icon size={15} className="text-foreground/80 group-hover:text-foreground transition-colors shrink-0" />
+                <span className="font-display font-bold text-[13px] tracking-[0.18em] truncate">
                   {cat.name}
                 </span>
               </div>
-              <span className="font-mono text-[10px] text-muted-foreground">
+              <span className="font-mono text-[10px] text-muted-foreground shrink-0">
                 {String(cat.channels.length).padStart(2, "0")}
               </span>
             </div>
