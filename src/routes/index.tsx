@@ -89,8 +89,12 @@ function Index() {
           <h2 className="font-display font-bold text-4xl md:text-6xl tracking-tight leading-[0.95] mb-3">
             EXPLORE THE COMMUNITY
           </h2>
-          <p className="font-mono text-sm md:text-base text-muted-foreground max-w-2xl mb-14">
+          <p className="font-mono text-sm md:text-base text-muted-foreground max-w-2xl mb-3">
             The actual Discord structure. Eight categories, dozens of channels, one community.
+          </p>
+          <p className="font-cursive text-base md:text-lg text-center text-muted-foreground/70 max-w-xl mx-auto mb-14 leading-7">
+            Pin board<br />
+            Click on the cards to see channels description.
           </p>
           <Channels />
         </div>
