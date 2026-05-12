@@ -38,7 +38,7 @@ function Index() {
         <div className="relative max-w-7xl mx-auto pt-14 md:pt-20 pb-20 md:pb-28 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-muted-foreground mb-6">
-              ▌ A Discord Community · est. 2024
+              ▌ A Discord Community · EST 4 JULY 2025
             </div>
             <HeroTitle />
             <p
