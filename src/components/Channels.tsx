@@ -5,7 +5,6 @@ import {
   Gamepad2,
   Rocket,
   Code2,
-  BookOpen,
   Mic,
   Brain,
   type LucideIcon,
