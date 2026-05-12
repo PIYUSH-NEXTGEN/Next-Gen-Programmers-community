@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useTheme } from "./ThemeProvider";
+import { LogoMark } from "./LogoMark";
 import { DISCORD_URL } from "@/lib/links";
 
 const LINKS = [
