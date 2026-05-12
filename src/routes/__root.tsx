@@ -10,6 +10,7 @@ import {
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { BackToTop } from "@/components/BackToTop";
 
 import appCss from "../styles.css?url";
 
@@ -123,6 +124,7 @@ function RootComponent() {
       <ThemeProvider>
         <div className="min-h-screen flex flex-col bg-background text-foreground">
           <Navbar />
+          <BackToTop />
           <div className="flex-1">
             <Outlet />
           </div>
