@@ -1,8 +1,16 @@
+export type RoleKey =
+  | "Owner"
+  | "Admin"
+  | "Moderator"
+  | "Junior"
+  | "Intermediate"
+  | "Advanced";
+
 export type Member = {
   id: number;
   name: string;
   username: string;
-  role: string;
+  roles: RoleKey[]; // first = primary role, rest = skill tier etc.
   avatar: string;
   socials: { github?: string; linkedin?: string; twitter?: string };
 };
@@ -15,12 +23,56 @@ export const members: Member[] = [
     id: 1,
     name: "Piyush Baraskar",
     username: "@majestic_728",
-    role: "Owner",
+    roles: ["Owner", "Junior"],
     avatar: seed("Piyush Baraskar"),
     socials: {
       linkedin: "https://www.linkedin.com/in/piyush-baraskar-994ab6337",
       github: "https://github.com/PIYUSH-NEXTGEN",
       twitter: "https://x.com/Piyush_NextGen?t=Yxj7znrqP7rb-D65Xp0nrw&s=09",
     },
+  },
+  {
+    id: 2,
+    name: "SIR WIZARD",
+    username: "@codewizard0574",
+    roles: ["Admin", "Intermediate"],
+    avatar: seed("SIR WIZARD"),
+    socials: {},
+  },
+  {
+    id: 3,
+    name: "Moksh Goyal",
+    username: "@moxgotcooked",
+    roles: ["Moderator", "Junior"],
+    avatar: seed("Moksh Goyal"),
+    socials: {
+      github: "https://github.com/MokshonWork",
+      linkedin: "https://www.linkedin.com/in/moksh-goyal-b032a9383/",
+      twitter: "https://x.com/MokshGoyal007",
+    },
+  },
+  {
+    id: 4,
+    name: "Divyansh Shakya",
+    username: "@qu4ntum_cyb.Org",
+    roles: ["Moderator", "Junior"],
+    avatar: seed("Divyansh Shakya"),
+    socials: {},
+  },
+  {
+    id: 5,
+    name: "Jesus",
+    username: "@greenbugx",
+    roles: ["Moderator", "Intermediate"],
+    avatar: seed("Jesus"),
+    socials: {},
+  },
+  {
+    id: 6,
+    name: "Crunch",
+    username: "@webdev_guy",
+    roles: ["Moderator", "Advanced"],
+    avatar: seed("Crunch"),
+    socials: {},
   },
 ];
