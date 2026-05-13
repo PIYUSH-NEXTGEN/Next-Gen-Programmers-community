@@ -23,7 +23,7 @@ export const members: Member[] = [
     id: 1,
     name: "Piyush Baraskar",
     username: "@majestic_728",
-    roles: ["Owner", "Junior"],
+    roles: ["Owner", "Admin", "Junior"],
     avatar: seed("Piyush Baraskar"),
     socials: {
       linkedin: "https://www.linkedin.com/in/piyush-baraskar-994ab6337",

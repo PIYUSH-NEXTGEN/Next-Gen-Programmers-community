@@ -11,11 +11,10 @@ const ROLE_STYLES: Record<RoleKey, { border: string; bg: string; text: string; d
     dot: "bg-blue-500",
   },
   Admin: {
-    // Admin not specified — neutral foreground
-    border: "border-foreground/40",
-    bg: "bg-foreground/[0.05]",
-    text: "text-foreground",
-    dot: "bg-foreground",
+    border: "border-pink-500",
+    bg: "bg-pink-500/10",
+    text: "text-pink-500 dark:text-pink-400",
+    dot: "bg-pink-500",
   },
   Moderator: {
     border: "border-red-500",
