@@ -1,6 +1,59 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter } from "lucide-react";
-import type { Member } from "@/data/members";
+import type { Member, RoleKey } from "@/data/members";
+
+// Role color mapping. Outline + soft tinted background, theme-friendly.
+const ROLE_STYLES: Record<RoleKey, { border: string; bg: string; text: string; dot: string }> = {
+  Owner: {
+    border: "border-blue-500",
+    bg: "bg-blue-500/10",
+    text: "text-blue-500 dark:text-blue-400",
+    dot: "bg-blue-500",
+  },
+  Admin: {
+    // Admin not specified — neutral foreground
+    border: "border-foreground/40",
+    bg: "bg-foreground/[0.05]",
+    text: "text-foreground",
+    dot: "bg-foreground",
+  },
+  Moderator: {
+    border: "border-red-500",
+    bg: "bg-red-500/10",
+    text: "text-red-500 dark:text-red-400",
+    dot: "bg-red-500",
+  },
+  Junior: {
+    border: "border-orange-500",
+    bg: "bg-orange-500/10",
+    text: "text-orange-500 dark:text-orange-400",
+    dot: "bg-orange-500",
+  },
+  Intermediate: {
+    border: "border-purple-500",
+    bg: "bg-purple-500/10",
+    text: "text-purple-500 dark:text-purple-400",
+    dot: "bg-purple-500",
+  },
+  Advanced: {
+    border: "border-yellow-500",
+    bg: "bg-yellow-500/10",
+    text: "text-yellow-500 dark:text-yellow-400",
+    dot: "bg-yellow-500",
+  },
+};
+
+function RoleBadge({ role }: { role: RoleKey }) {
+  const s = ROLE_STYLES[role];
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.24em] uppercase px-2.5 py-1 border ${s.border} ${s.bg} ${s.text} rounded-sm`}
+    >
+      <span className={`w-1.5 h-1.5 rounded-full ${s.dot}`} />
+      {role}
+    </span>
+  );
+}
 
 export function MemberCard({ member, index }: { member: Member; index: number }) {
   return (
@@ -28,9 +81,11 @@ export function MemberCard({ member, index }: { member: Member; index: number })
         {member.username}
       </div>
 
-      <span className="inline-flex items-center font-mono text-[10px] tracking-[0.28em] uppercase px-3 py-1 mb-6 border border-foreground/30 bg-foreground/[0.04] text-foreground/90 rounded-sm">
-        {member.role}
-      </span>
+      <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+        {member.roles.map((r) => (
+          <RoleBadge key={r} role={r} />
+        ))}
+      </div>
 
       <div className="flex gap-4 mt-auto pt-4 border-t border-border w-full justify-center">
         {member.socials.github && (
