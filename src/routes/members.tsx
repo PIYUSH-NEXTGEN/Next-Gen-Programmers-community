@@ -21,8 +21,8 @@ function MembersPage() {
       <PageHeader
         index="01"
         label="MEMBERS"
-        title="MEET THE BUILDERS"
-        subtitle="The core team and contributors keeping NEXT-GEN running, reviewing PRs, and answering questions at 2am."
+        title="MEET THE CORE MEMBERS"
+        subtitle="The core team and contributors keeping NEXT-GEN an active community."
       />
       <section className="px-5 md:px-8 py-16 md:py-24">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
