@@ -31,10 +31,10 @@
   --color-ring: var(--ring);
   --color-surface: var(--surface);
   --color-subtle: var(--subtle);
-  --font-display: "Space Grotesk", "Montserrat", sans-serif;
-  --font-mono: "JetBrains Mono", "Space Mono", monospace;
-  --font-ui: "Inter", system-ui, sans-serif;
-  --font-cursive: "Great Vibes", cursive;
+  --font-display: "Comic Sans MS", "Chalkboard SE", "Marker Felt", cursive, sans-serif;
+  --font-mono: "Comic Sans MS", "Chalkboard SE", "Marker Felt", cursive, monospace;
+  --font-ui: "Comic Sans MS", "Chalkboard SE", "Marker Felt", cursive, sans-serif;
+  --font-cursive: "Comic Sans MS", "Chalkboard SE", "Marker Felt", cursive;
 }
 
 /* LIGHT MODE (default) */
