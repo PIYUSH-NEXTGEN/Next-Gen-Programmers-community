@@ -20,7 +20,7 @@ const ROLE_PRIORITY: Record<RoleKey, number> = {
   Owner: 0,
   Admin: 1,
   Moderator: 2,
-  "Godly Programmer": 0,
+  "Godly Programmer": 3,
   Advanced: 3,
   Intermediate: 4,
   Junior: 5,
