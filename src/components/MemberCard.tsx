@@ -22,6 +22,12 @@ const ROLE_STYLES: Record<RoleKey, { border: string; bg: string; text: string; d
     text: "text-red-500 dark:text-red-400",
     dot: "bg-red-500",
   },
+  "Godly Programmer": {
+    border: "border-black dark:border-white",
+    bg: "bg-black/10 dark:bg-white/10",
+    text: "text-black dark:text-white",
+    dot: "bg-black dark:bg-white",
+  },
   Junior: {
     border: "border-orange-500",
     bg: "bg-orange-500/10",
