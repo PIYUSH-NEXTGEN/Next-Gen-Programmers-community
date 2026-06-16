@@ -2,9 +2,10 @@ export type RoleKey =
   | "Owner"
   | "Admin"
   | "Moderator"
-  | "Junior"
+  | "Godly Programmer"
+  | "Advanced"
   | "Intermediate"
-  | "Advanced";
+  | "Junior";
 
 export type Member = {
   id: number;
@@ -137,6 +138,102 @@ export const members: Member[] = [
     username: "@adityakr15",
     roles: ["Intermediate"],
     avatar: seed("Aditya"),
+    socials: {},
+  },
+  {
+    id: 15,
+    name: "APU",
+    username: "@apu5402",
+    roles: ["Junior"],
+    avatar: seed("APU"),
+    socials: {},
+  },
+  {
+    id: 16,
+    name: "Abhinav harshikesh",
+    username: "@mr.dickens.co",
+    roles: ["Intermediate"],
+    avatar: seed("Abhinav harshikesh"),
+    socials: {},
+  },
+  {
+    id: 17,
+    name: "Parv chaudhary",
+    username: "@pacsamil",
+    roles: ["Junior"],
+    avatar: seed("Parv chaudhary"),
+    socials: {},
+  },
+  {
+    id: 18,
+    name: "kamalnayan",
+    username: "@kamalxkazma",
+    roles: ["Junior"],
+    avatar: seed("kamalnayan"),
+    socials: {},
+  },
+  {
+    id: 19,
+    name: "Pragyan",
+    username: "@sirlancelot013",
+    roles: ["Junior"],
+    avatar: seed("Pragyan"),
+    socials: {},
+  },
+  {
+    id: 20,
+    name: "Ayush Pandey",
+    username: "@viperkun",
+    roles: ["Intermediate"],
+    avatar: seed("Ayush Pandey"),
+    socials: {},
+  },
+  {
+    id: 21,
+    name: "Prateek Dalal",
+    username: "@parteekdalal",
+    roles: ["Intermediate"],
+    avatar: seed("Prateek Dalal"),
+    socials: {},
+  },
+  {
+    id: 22,
+    name: "C calc guy",
+    username: "@kasane_obsessed",
+    roles: ["Junior"],
+    avatar: seed("C calc guy"),
+    socials: {},
+  },
+  {
+    id: 23,
+    name: "Hypervisor",
+    username: "@hypervisor_",
+    roles: ["Godly Programmer", "Advanced"],
+    avatar: seed("Hypervisor"),
+    socials: {},
+  },
+  {
+    id: 24,
+    name: "Batman",
+    username: "@lilyauwu98",
+    roles: ["Junior"],
+    avatar: seed("Batman"),
+    socials: {},
+  },
+  {
+    id: 25,
+    name: "Aquaregent",
+    username: "@aquaregent",
+    roles: ["Advanced"],
+    avatar: seed("Aquaregent"),
+    socials: {},
+  },
+  {
+    id: 26,
+    name: "Bhartiya",
+    username: "@bharatiya09",
+    roles: ["Intermediate"],
+    avatar: seed("Bhartiya"),
     socials: {},
   },
 ];
